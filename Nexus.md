@@ -41,7 +41,9 @@ java.lang.OutOfMemoryError: Java heap space
 ```
 ###### 参考
 [Fix Sonatype Nexus OrientDB](https://gist.github.com/marcelmaatkamp/123e8793e07a72a382d8d0e8d66bbd8f)
+
 [OrientDB corruption state in Nexus Repository version 3.2.0-01](https://stackoverflow.com/questions/42951710/orientdb-corruption-state-in-nexus-repository-version-3-2-0-01)
+
 [Nexus3 OrientDB Console使用](https://blog.csdn.net/annkie/article/details/84337641)
 ```shell script
 Unix
@@ -61,9 +63,8 @@ orientdb {db=${database}> REPAIR DATABASE --fix-bonsai
 orientdb {db=${database}> DISCONNECT
 ```
 
+###### widdow下我的记录
 ```shell script
-widdow下我的记录
-
 D:\nexus-3.18.1-01-win64\nexus-3.18.1-01>java -jar lib\support\nexus-orient-console.jar
 orientdb> CONNECT PLOCAL:D:/nexus-3.18.1-01-win64/sonatype-work/nexus3/db/config admin admin
 
